@@ -46,7 +46,7 @@ loader.load(
 
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background
-renderer.setSize(window.innerWidth/2, window.innerHeight/2);
+renderer.setSize(window.innerWidth/4, window.innerHeight/4);
 
 //Add the renderer to the DOM
 document.getElementById("pathProduct2").appendChild(renderer.domElement);
