@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "dev",
-    "start": "node ./bin/http-server"
+    "start": "node ./http-server"
   },
   "author": "",
   "license": "ISC",
