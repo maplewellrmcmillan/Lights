@@ -28,7 +28,7 @@ const loader = new GLTFLoader();
 
 //Load the file
 loader.load(
-    `models/${objToRender}/silva_h.gltf`,
+    `models/${objToRender}/spot_Small.gltf`,
     function (gltf) {
         //If the file is loaded, add it to the scene
         object = gltf.scene;

@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "connect": "^3.7.0",
+    "serve-static": "^1.15.0",
     "three": "^0.167.1",
     "vite": "^5.4.0"
   }

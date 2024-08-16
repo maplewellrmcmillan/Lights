@@ -28,7 +28,7 @@ const loader = new GLTFLoader();
 
 //Load the file
 loader.load(
-    `models/${objToRender}/scene.gltf`,
+    `models/${objToRender}/blaze_h.gltf`,
     function (gltf) {
         //If the file is loaded, add it to the scene
         object = gltf.scene;
@@ -79,6 +79,7 @@ function animate() {
         object.rotation.y = -3 + mouseX / window.innerWidth * 3;
         object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
     }
+    object.rotation.y = object.rotation.y + 0.01;
     renderer.render(scene, camera);
 }
 

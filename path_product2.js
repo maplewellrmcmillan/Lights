@@ -8,7 +8,7 @@ import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/l
 //Create a Three.JS Scene
 const scene = new THREE.Scene();
 //create a new camera with positions and angles
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(125, window.innerWidth / window.innerHeight, 0.1, 1000);
 
 //Keep track of the mouse position, so we can make the eye move
 let mouseX = window.innerWidth / 2;
@@ -28,7 +28,7 @@ const loader = new GLTFLoader();
 
 //Load the file
 loader.load(
-    `models/${objToRender}/scene.gltf`,
+    `models/${objToRender}/silva_h.gltf`,
     function (gltf) {
         //If the file is loaded, add it to the scene
         object = gltf.scene;
@@ -79,6 +79,7 @@ function animate() {
         object.rotation.y = -3 + mouseX / window.innerWidth * 3;
         object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
     }
+    object.rotation.y = object.rotation.y + 0.01;
     renderer.render(scene, camera);
 }
 
