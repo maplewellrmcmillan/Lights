@@ -49,7 +49,7 @@ const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows 
 renderer.setSize(window.innerWidth/4, window.innerHeight/4);
 
 //Add the renderer to the DOM
-document.getElementById("deckProduct3").appendChild(renderer.domElement);
+document.getElementById("accProduct2").appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
 camera.position.z = objToRender === "dino" ? 25 : 500;
